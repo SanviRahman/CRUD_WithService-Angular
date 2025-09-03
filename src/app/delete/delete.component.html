@@ -1,0 +1,17 @@
+<div class="delete-container">
+    <div class="delete-card">
+        <h2 class="card-title">Delete User</h2>
+        <p>Are you sure to delete <strong>{{user?.name}}</strong></p>
+        <div class="card-actions">
+            <button (click)="conformDelete()" class="btn-delete">Delete</button>
+            <button (click)="closePage()" class="btn-cancel">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- Full-screen Success Modal -->
+<div *ngIf="showMessage" class="success-modal">
+    <div class="success-content">
+        <h3>{{ successMessage }}</h3>
+    </div>
+</div>
