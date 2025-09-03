@@ -10,8 +10,8 @@ const routes: Routes = [
   { path: '', component: ReadComponent },
   { path: 'read', component: ReadComponent },
   { path: 'create', component: CreateComponent },
-  { path: 'update/:id', component: UpdateComponent },
-  { path: 'delete/:id', component: DeleteComponent },
+  { path: 'update/:id/:name', component: UpdateComponent },
+  { path: 'delete/:id/:name', component: DeleteComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 

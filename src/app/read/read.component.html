@@ -1,25 +1,25 @@
 <h2>Users List</h2>
 
 <div class="table-container">
-  <table class="users-table">
-      <thead>
-          <tr>
-              <th>ID</th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Action</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr *ngFor="let user of users">
-              <td>{{ user.id }}</td>
-              <td>{{ user.name }}</td>
-              <td>{{ user.email }}</td>
-              <td class="action-links">
-                  <a [routerLink]="['/update', user.id]" class="edit-btn">Update</a>
-                  <a [routerLink]="['/delete', user.id]" class="delete-btn">Delete</a>
-              </td>
-          </tr>
-      </tbody>
-  </table>
+    <table class="users-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td class="action-links">
+                    <a [routerLink]="['/update', user.id, user.name]" class="edit-btn">Update</a>
+                    <a [routerLink]="['/delete', user.id,user.name]" class="delete-btn">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
