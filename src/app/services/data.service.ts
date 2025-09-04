@@ -58,7 +58,7 @@ export class DataService {
 
     await fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
       method: 'PUT',
-      headers: { 'Content-type': 'application/json ' },
+      headers: { 'Content-type': 'application/json' },
       body: JSON.stringify(user)
     })
 
