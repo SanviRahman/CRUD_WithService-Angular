@@ -30,7 +30,7 @@ export class DeleteComponent {
     }
 
     this.dataService.delete(this.id).then(() => {
-      this.successMessage = 'User Delete SuccessFully!';
+      this.successMessage = 'User Delete Successfully!';
       this.showMessage = true;
 
 
